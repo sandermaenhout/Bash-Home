@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'cold_warmregular';
+    src: url('../assets/fonts/cold_warm-webfont.woff2') format('woff2'),
+         url('../assets/fonts/cold_warm-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.header_background{
+    background-color: #262626;
+    height: 100vh;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 2.5rem 0 2.5rem 0;
+    width: 90%;
+}
+
+.logo_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_nav img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.logo_nav_text{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.links_container{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.link a{
+    text-decoration: none;
+    margin-left: 4rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+}
+.button_link a{
+    text-decoration: none;
+    margin-left: 4rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: #FF0047;
+    border-radius: 3rem;
+}
+
+.button_link a:hover{
+    background-color: #FFD11C;
+    color: #262626;
+}
+
+.link a:hover{
+    border-bottom: .2rem #FF0047 solid;
+    color: #FFD11C;
+}
+
+.logo_header{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo_header img{
+    width: 40rem;
+    height: 40rem;
+}
+
+.container_title{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+}
+
+.title_header{
+    font-family: cold_warmregular, Arial, Helvetica, sans-serif;
+    font-size: 10rem;
+    text-transform: uppercase;
+    color: black;
+    -webkit-text-stroke-width: .2rem;
+    -webkit-text-stroke-color: white;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.text_header{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+.text_header::after, .text_header::before{
+    content: ' - ';
+}
+
+.app_store{
+    background-image: url('../assets/images/app_store.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: none;
+    background-color: transparent;
+    width: 21rem;
+    height: 7rem;
+    border-radius: 1rem;
+    transform: scale(1);
+    transition: .2s ease-in;
+}
+
+.app_store:hover{
+    transform: scale(1.1);
+    transition: .2s ease-in;
+}
+
+.google_store{
+    background-image: url('../assets/images/google_store.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: none;
+    background-color: transparent;
+    width: 21rem;
+    height: 7rem;
+    border-radius: 1rem;
+    margin-left: 5rem;
+    transform: scale(1);
+    transition: .2s ease-in;
+}
+
+.google_store:hover{
+    transform: scale(1.1);
+    transition: .2s ease-in;
+}
+
+.container_buttons{
+    position: absolute;
+    bottom: 17.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
